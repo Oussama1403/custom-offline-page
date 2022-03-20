@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>online</title>
+    
+	<!-- meta tags -->
+    
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<!-- import font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"/>
+
+
+    <style>    
+       
+	  body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2em;
+      background: #fcfcfc;
+      }        
+      p {
+      text-align: center;
+      color:#3E3E3E;
+      letter-spacing:2px;
+      font-size: 40px;
+      }
+    </style>
+  </head>
+  
+  <body>
+	
+	<script>
+		// Register the service worker
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js').then(function(registration) {
+		    // Registration was successful
+		    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+		}).catch(function(err) {
+		    // registration failed :(
+		    	console.log('ServiceWorker registration failed: ', err);
+		    });
+		}
+	</script>
+
+    <center>
+      <p>good! ,you are online.</p>
+    </center>
+  </body>
+</html>
