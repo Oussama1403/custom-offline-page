@@ -1,5 +1,5 @@
 # :star: Simple offline page using Service Workers
-
+![GUI](gui.png)
 ##  :question: how this example will work :
 
 1.  We install the Service Worker and then we cache our offline html page.
