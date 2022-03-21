@@ -1,6 +1,5 @@
 # :star: Simple offline page using Service Workers
 
-![screenshot](offline.jpg)
 
 ##  :question: how this example will work :
 
